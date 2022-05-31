@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# This is a sample build file. Make changes as necessary to suit your needs.
+# More information can be found here: https://github.com/cpu/ldmud-tutorial
+
+set -eo pipefail
+
+# Setup the basic directories needed
+LDHOME=/ld
+LDLIB="$LDHOME/lib"
+LDBIN="$LDHOME/bin"
+LDTELNETPORT=4444
+LDOPTIONS="--debug-file=$LDLIB/log/debug.log $TELNET_PORT"
+
+$LDBIN/ldmud $LDOPTIONS
+

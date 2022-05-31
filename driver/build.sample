@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# This is a sample build file. Make changes as necessary to suit your needs.
+# More information can be found here: https://github.com/cpu/ldmud-tutorial
+
+# Setup the basic directories needed
+LDHOME=/ld
+LDSRC="$LDHOME/ldmud/src"
+LDLIB="$LDHOME/lib"
+LDOPTIONS="--prefix=$LDHOME"
+
+cd $LDSRC
+
+echo "[1] Running $LDSRC/autogen.sh"
+bash ./autogen.sh
+
+echo "[2] Running configure $LDOPTIONS"
+./configure $LDOPTIONS
+
+echo "[3] Running make install-all"
+make install-all
+
+echo "[4] Completed"
