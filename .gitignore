@@ -1,5 +1,12 @@
 # Git ignore file
 
-/log/debug.log
-/log/log
+# Log files
+log/debug.log
+log/ENTER
+log/log
 log/NEWPLAYER
+
+
+# Volatile files
+LP_SWAP.*
+*.o
