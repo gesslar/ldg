@@ -20,4 +20,7 @@ echo "[2] Running configure $LDOPTIONS"
 echo "[3] Running make install-all"
 make install-all
 
-echo "[4] Completed"
+echo "[4] Copying include files"
+cp -vf $LDHOME/include/*.h $LDLIB/sys
+
+echo "[5] Completed"
