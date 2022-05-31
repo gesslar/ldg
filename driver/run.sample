@@ -10,6 +10,6 @@ LDHOME=/ld
 LDLIB="$LDHOME/lib"
 LDBIN="$LDHOME/bin"
 LDTELNETPORT=4444
-LDOPTIONS="--debug-file=$LDLIB/log/debug.log $TELNET_PORT"
+LDOPTIONS="--debug-file=$LDLIB/log/debug.log $LDTELNETPORT"
 
 $LDBIN/ldmud $LDOPTIONS
