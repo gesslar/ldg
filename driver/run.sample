@@ -13,4 +13,3 @@ LDTELNETPORT=4444
 LDOPTIONS="--debug-file=$LDLIB/log/debug.log $TELNET_PORT"
 
 $LDBIN/ldmud $LDOPTIONS
-
