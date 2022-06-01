@@ -6,7 +6,6 @@ log/ENTER
 log/log
 log/NEWPLAYER
 
-
 # Volatile files
 LP_SWAP.*
 *.o

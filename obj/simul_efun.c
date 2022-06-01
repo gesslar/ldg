@@ -15,6 +15,9 @@
 #define LIVING_NAME 3
 #define NAME_LIVING 4
 
+inherit __DIR__ "simul_efun/directory" ;
+inherit __DIR__ "simul_efun/explode_file" ;
+
 #include "/sys/wizlist.h"
 #include "/sys/erq.h"
 #include "/sys/files.h"
@@ -22,7 +25,7 @@
 #include "/sys/interactive_info.h"
 #include "/sys/object_info.h"
 #include "/sys/driver_info.h"
-
+#include "/sys/simul_efun.h"
 
 mapping living_name_m, name_living_m;
   /* Living -> Name and Name -> Living mappings.
@@ -201,6 +204,8 @@ varargs mixed snoop(mixed snoopee)
 	    break;
     }
     if (result > 0) return snoopee;
+
+    return 0 ;
 }
 
 //---------------------------------------------------------------------------
