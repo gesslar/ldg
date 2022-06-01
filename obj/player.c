@@ -1350,7 +1350,7 @@ static void move_player_to_start3(mixed where) {
         money += tot_value;
         tot_value = 0;
     }
-    cat("/NEWS");
+    cat("/etc/NEWS");
     if(where)
         move_object(myself, where);
     else {
@@ -1364,7 +1364,7 @@ static void move_player_to_start3(mixed where) {
     else
         write("YOU ARE INVISIBLE !\n\n");
     if(level >= 21)
-        cat("/WIZNEWS");
+        cat("/etc/WIZNEWS");
     "room/post"->query_mail();
     if(query_ip_number() != called_from_ip && called_from_ip)
         write("Your last login was from " + called_from_ip + "\n");

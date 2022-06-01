@@ -11,7 +11,6 @@ For both modes the master object is 'obj/master.c'.
 The topdirectory contains these files and directories:
 
   ACCESS.ALLOW: the usual access definition file
-  WELCOME, NEWS, WIZNEWS: the messages printed on login
   WIZLIST     : the wizlist savefile
 
   doc/        : mudlib-specific documentation, to be complemented
